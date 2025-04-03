@@ -2,10 +2,17 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-navigation-bar',
-  imports: [],
   templateUrl: './navigation-bar.component.html',
-  styleUrl: './navigation-bar.component.scss'
+  styleUrls: ['./navigation-bar.component.scss']
 })
 export class NavigationBarComponent {
-
+  name = 'KATE KONDRATENKO';
+  navigationLinksLeft = [
+    { label: 'HOME', link: '#home' },
+    { label: 'ABOUT', link: '#about' }
+  ];
+  navigationLinksRight = [
+    { label: 'WORK', link: '#work' },
+    { label: 'CONTACT', link: '#contact' }
+  ];
 }

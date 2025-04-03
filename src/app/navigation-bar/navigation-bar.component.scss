@@ -1,0 +1,43 @@
+@use '../../variables' as *;
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Вертикальное выравнивание по центру */
+  width: 100%;
+  padding: 1rem 2rem; /* Добавь отступы сверху и снизу, слева и справа по вкусу */
+  box-sizing: border-box; /* Чтобы padding не увеличивал общую ширину */
+  background-color: transparent; /* Или другой цвет, если нужен фон для навигации */
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+li {
+  margin: 0 1rem; /* Расстояние между ссылками */
+}
+
+a {
+  text-decoration: none;
+  color: $primary-font-color;
+  font-weight: $font-weight-medium;
+  text-transform: uppercase;
+}
+
+.name {
+  color: $primary-font-color;
+  font-weight: $font-weight-medium;
+  text-transform: uppercase;
+}
+
+.left-links {
+  /* Дополнительные стили для левой части, если понадобятся */
+}
+
+.right-links {
+  /* Дополнительные стили для правой части, если понадобятся */
+}
