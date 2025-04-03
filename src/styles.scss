@@ -1,1 +1,24 @@
-/* You can add global styles to this file, and also import other style files */
+@use 'variables' as *;
+
+body {
+  background-color: $primary-background-color;
+  color: $primary-font-color;
+  font-family: $font-family-inter;
+  font-weight: $font-weight-regular;
+}
+
+h1, h2, h3, h4, h5, h6, strong {
+  font-weight: $font-weight-medium;
+}
+
+.medium-font {
+  font-weight: $font-weight-medium;
+}
+
+.regular-font {
+  font-weight: $font-weight-regular;
+}
+
+.semi-bold-font {
+  font-weight: $font-weight-semi-bold;
+}
