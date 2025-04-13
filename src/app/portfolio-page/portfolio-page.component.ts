@@ -4,12 +4,14 @@ import { SummaryComponent } from '../summary/summary.component';
 import { ProjectGalleryComponent } from '../project-gallery/project-gallery.component';
 import { MyServicesComponent } from '../my-services/my-services.component';
 import { FooterComponent } from '../footer/footer.component';
+import { ProjectPreviewsComponent } from '../project-previews/project-previews.component';
 
 @Component({
   selector: 'app-portfolio-page',
   imports: [ 
     NavigationBarComponent,
     SummaryComponent,
+    ProjectPreviewsComponent,
     ProjectGalleryComponent,
     MyServicesComponent,
     FooterComponent

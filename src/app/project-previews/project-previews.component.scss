@@ -1,0 +1,16 @@
+.project-previews-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Создаем 3 колонки одинаковой ширины */
+    gap: 10px; /* Расстояние между картинками */
+  }
+  
+  .project-link {
+    display: block; /* Чтобы вся область ссылки была кликабельна */
+  }
+  
+  .project-link img {
+    width: 100%; /* Картинка занимает всю ширину ячейки */
+    height: auto; /* Автоматическая высота для сохранения пропорций */
+    border-radius: 5px; /* Закругленные углы */
+    object-fit: cover; /* Чтобы картинки корректно заполняли область, не искажаясь */
+  }

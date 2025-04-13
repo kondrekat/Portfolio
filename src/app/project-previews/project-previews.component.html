@@ -1,0 +1,7 @@
+<div class="project-previews-container">
+    @for (project of projects; track $index) {
+      <a [href]="project.linkUrl" target="_blank" class="project-link">
+        <img [src]="project.imageUrl" alt="Project Preview">
+      </a>
+    }
+  </div>
