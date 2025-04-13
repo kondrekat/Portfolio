@@ -1,0 +1,116 @@
+@use '../../variables' as *;
+
+.portfolio-featured-work {
+  width: 100%;
+  padding: 2rem; /* Общие отступы для секции */
+  box-sizing: border-box;
+}
+
+.portfolio-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.portfolio-marker {
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background-color: $primary-font-color; /* Цвет точки */
+  margin-right: 0.5rem;
+}
+
+.portfolio-title {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: $font-weight-medium;
+  color: $primary-font-color;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: $font-weight-semi-bold;
+  color: $primary-font-color;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+}
+
+.featured-work-gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* По умолчанию две колонки */
+  gap: 1rem; /* Отступ между блоками */
+  width: 100%;
+}
+
+.project-block {
+  position: relative;
+  overflow: hidden; /* Чтобы скрыть выходящие за границы элементы при наведении */
+}
+
+.project-block.full-width {
+  grid-column: 1 / -1; /* Занимает всю ширину */
+}
+
+.project-block img {
+  width: 100%;
+  display: block;
+  height: auto;
+}
+
+.project-info {
+  padding: 1rem;
+  color: $primary-font-color;
+}
+
+.project-title-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.project-title {
+  font-size: 1.5rem;
+  font-weight: $font-weight-semi-bold;
+  margin: 0;
+  text-align: left;
+}
+
+.view-project {
+  color: $primary-font-color;
+  text-decoration: none;
+  font-weight: $font-weight-medium;
+  display: flex;
+  align-items: center;
+}
+
+.view-project .arrow {
+  margin-left: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.project-description-text {
+  font-size: 0.9rem; /* Можешь настроить размер шрифта */
+  color: $primary-font-color;
+}
+
+.project-description-text span {
+  margin-right: 0.5em; /* Расстояние между элементами */
+}
+
+.project-description-text span.separator {
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+}
+
+/* Медиа-запросы для адаптивности галереи */
+@media (max-width: 768px) {
+  .featured-work-gallery {
+    grid-template-columns: 1fr; /* Одна колонка на средних экранах */
+  }
+
+  .project-block.full-width {
+    grid-column: auto; /* Возвращаем автоматическое размещение */
+  }
+}

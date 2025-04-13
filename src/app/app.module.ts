@@ -12,7 +12,7 @@ import { PortfolioPageComponent } from './portfolio-page/portfolio-page.componen
   imports: [
     CommonModule,
     AppComponent,
-    PortfolioPageComponent,
+    PortfolioPageComponent
   ],
   providers: []
 })
