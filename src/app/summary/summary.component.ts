@@ -2,10 +2,11 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-summary',
-  imports: [],
   templateUrl: './summary.component.html',
-  styleUrl: './summary.component.scss'
+  styleUrls: ['./summary.component.scss']
 })
 export class SummaryComponent {
-
+  headingText = "HI, I'M KATE KONDRATENKO PROFESSIONAL FRONTEND DEVELOPER";
+  leftText = "Based in Haifa, Israel and working Worldwide";
+  rightText = "Passionate Frontend Developer Crafting Visually Captivating Websites with Angular or anything you wish";
 }
