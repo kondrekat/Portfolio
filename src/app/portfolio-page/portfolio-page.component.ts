@@ -5,6 +5,7 @@ import { ProjectGalleryComponent } from '../project-gallery/project-gallery.comp
 import { MyServicesComponent } from '../my-services/my-services.component';
 import { FooterComponent } from '../footer/footer.component';
 import { ProjectPreviewsComponent } from '../project-previews/project-previews.component';
+import { AboutMeComponent } from '../about-me/about-me.component';
 
 @Component({
   selector: 'app-portfolio-page',
@@ -12,6 +13,7 @@ import { ProjectPreviewsComponent } from '../project-previews/project-previews.c
     NavigationBarComponent,
     SummaryComponent,
     ProjectPreviewsComponent,
+    AboutMeComponent,
     ProjectGalleryComponent,
     MyServicesComponent,
     FooterComponent
