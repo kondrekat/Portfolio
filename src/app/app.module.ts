@@ -3,6 +3,8 @@ import { CommonModule } from '@angular/common';
 
 import { AppComponent } from './app.component';
 import { PortfolioPageComponent } from './portfolio-page/portfolio-page.component';
+import { DividerComponent } from './ui/divider/divider.component';
+import { ButtonComponent } from './ui/button/button.component';
 
 
 
@@ -12,8 +14,10 @@ import { PortfolioPageComponent } from './portfolio-page/portfolio-page.componen
   imports: [
     CommonModule,
     AppComponent,
-    PortfolioPageComponent
+    PortfolioPageComponent,
+    DividerComponent,
+    ButtonComponent
   ],
-  providers: []
+  providers: [],
 })
 export class AppModule { }

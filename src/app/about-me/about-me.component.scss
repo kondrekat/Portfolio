@@ -69,16 +69,7 @@
   color: $primary-font-color; /* Используем переменную для цвета текста */
 }
 
-.more-about-me-button {
-    background-color: $primary-background-color;
-    padding: 1rem 0; /* Вертикальные и горизонтальные отступы для кнопки */
-    border-radius: 30px; /* Делаем кнопку овальной (большой радиус) */
-    border-color: $primary-font-color;
-    color: $primary-font-color; /* Белый текст на кнопке */
-    font-size: 1rem;
-    cursor: pointer; /* Курсор "рука" при наведении */
-    width: 140px;
-}
+
 
 /* Адаптивность (пример для небольших экранов) */
 @media (max-width: 768px) {

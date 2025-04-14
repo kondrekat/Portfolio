@@ -1,9 +1,13 @@
 import { Component } from '@angular/core';
+import { DividerComponent } from '../ui/divider/divider.component';
 
 @Component({
   selector: 'app-summary',
   templateUrl: './summary.component.html',
-  styleUrls: ['./summary.component.scss']
+  styleUrls: ['./summary.component.scss'],
+  imports: [
+    DividerComponent
+  ]
 })
 export class SummaryComponent {
   headingText = "HI, I'M KATE KONDRATENKO PROFESSIONAL FRONTEND DEVELOPER";
