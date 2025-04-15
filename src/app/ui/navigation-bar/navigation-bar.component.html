@@ -1,11 +1,11 @@
 <nav>
-    <ul class="left-links">
+    <ul class="link">
       @for (link of navigationLinksLeft; track $index) {
         <li><a [href]="link.link">{{ link.label }}</a></li>
       }
     </ul>
-    <span class="name">{{ name }}</span>
-    <ul class="right-links">
+    <span class="logo">{{ name }}</span>
+    <ul class="link">
       @for (link of navigationLinksRight; track $index) {
         <li><a [href]="link.link">{{ link.label }}</a></li>
       }

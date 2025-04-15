@@ -9,10 +9,6 @@
 }
 
 h1 {
-  font-size: $h1-font-size;
-  line-height: $h1-line-height; /* Можешь настроить размер шрифта */
-  text-transform: uppercase;
-  font-weight: $font-weight-medium;
   margin-bottom: 1rem;
   text-align: left; /* Выравниваем текст по левому краю */
   padding-left: 3%; /* Отступ слева, чтобы совпадал с полосой и текстом */
@@ -30,10 +26,7 @@ h1 {
 }
 
 .text-block-base {
-    font-weight: $font-weight-medium;
     margin: 0;
-    font-size: $p-font-size-medium;
-    line-height: $p-line-height-medium;
   }
   
   .left-text {

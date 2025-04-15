@@ -1,6 +1,8 @@
 <div class="services-intro">
-    <span class="bullet"></span> services
-    <h1>WHAT I DO</h1>
+    <span class="marker"></span>
+    <h2 class="small-heading">services</h2>
+    <br>
+    <h2>WHAT I DO</h2>
     <hr class="divider">
   </div>
 <div class="services-container">
@@ -11,12 +13,12 @@
       <div class="services-list">
         <div class="services-column">
           <div *ngFor="let service of block.services | slice: 0:block.services.length / 2">
-            {{ service }}
+            <p class="small">{{ service }}</p>
           </div>
         </div>
         <div class="services-column">
           <div *ngFor="let service of block.services | slice: block.services.length / 2">
-            {{ service }}
+            <p class="small">{{ service }}</p>
           </div>
         </div>
       </div>
