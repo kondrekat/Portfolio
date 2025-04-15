@@ -1,1 +1,28 @@
-<p>my-services works!</p>
+<div class="services-intro">
+    <span class="bullet"></span> services
+    <h1>WHAT I DO</h1>
+    <hr class="divider">
+  </div>
+<div class="services-container">
+    <div *ngFor="let block of servicesBlocks; let last = last" class="service-row">
+      <div class="block-title">
+        <h4>{{ block.title }}</h4>
+      </div>
+      <div class="services-list">
+        <div class="services-column">
+          <div *ngFor="let service of block.services | slice: 0:block.services.length / 2">
+            {{ service }}
+          </div>
+        </div>
+        <div class="services-column">
+          <div *ngFor="let service of block.services | slice: block.services.length / 2">
+            {{ service }}
+          </div>
+        </div>
+      </div>
+      <hr *ngIf="!last" class="services-divider">
+      <div *ngIf="last" class="last-row-margin"></div>
+    </div>
+  </div>
+  
+  <app-divider></app-divider>

@@ -1,0 +1,64 @@
+@use '../../../variables' as *; // Или путь к вашим глобальным стилям, где определены переменные
+
+.services-intro {
+    margin-bottom: 30px; /* Добавим отступ до блоков услуг */
+  
+    .bullet {
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background-color: $primary-font-color;
+      margin-right: 10px;
+      vertical-align: middle; /* Выравниваем точку по центру текста */
+    }
+  
+    h1 {
+      text-transform: uppercase;
+      color: $primary-font-color;
+      margin-top: 10px;
+      margin-bottom: 15px;
+      font-size: 2.5em; /* Можете настроить размер шрифта */
+    }
+  
+    .divider {
+      border: none;
+      border-top: 1px solid $secondary-color;
+      margin: 20px auto; /* Центрируем и добавляем отступы */
+    }
+  }
+
+.services-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.service-row {
+  display: grid;
+  grid-template-columns: 1fr 2fr; /* Левая колонка (название) занимает 1/3, правая (услуги) - 2/3 */
+  padding: 15px 0;
+}
+
+.block-title {
+  text-transform: uppercase;
+  color: $primary-font-color;
+  padding-right: 20px;
+}
+
+.services-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Разделение на две подколонки */
+  gap: 10px;
+  color: $primary-font-color;
+}
+
+.services-divider {
+  border: none;
+  border-top: 1px solid $secondary-color;
+  margin: 15px 0;
+  grid-column: 1 / -1;
+}
+
+.last-row-margin {
+  margin-bottom: 30px; /* Задайте желаемый отступ после последнего блока */
+}

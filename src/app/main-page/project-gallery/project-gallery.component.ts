@@ -19,6 +19,8 @@ export class ProjectGalleryComponent {
     { title: 'Project 9', image: 'https://picsum.photos/300/200?random=9', link: '/project/9' }
   ];
 
+  buttonText: string = 'View All Projects';
+
   openProject(link: string) {
     // Здесь будет логика для перехода на страницу проекта
     console.log(`Переход на страницу: ${link}`);

@@ -2,7 +2,6 @@
 
 .portfolio-featured-work {
   width: 100%;
-  padding: 2rem; /* Общие отступы для секции */
   box-sizing: border-box;
 }
 
@@ -102,6 +101,10 @@ h1 {
 .project-description-text span.separator {
   margin-left: 0.5em;
   margin-right: 0.5em;
+}
+
+.button-wrapper {
+  text-align: center;
 }
 
 /* Медиа-запросы для адаптивности галереи */
