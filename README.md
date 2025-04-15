@@ -7,15 +7,8 @@ Please note that this project is currently under active development. The work pr
 I welcome your feedback and would be happy to discuss any thoughts or questions you might have. Feel free to reach out to me through any convenient means.
 
 Once the active development on this project is finished, I will be ready to provide a comprehensive explanation of every aspect and symbol within the code. Thank you for your understanding.
-
-
----
-***
 ___
 This project was created with Gemini AI assistance.
-
----
-***
 ___
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.5.
