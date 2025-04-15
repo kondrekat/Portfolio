@@ -1,10 +1,15 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { PortfolioPageComponent } from './portfolio-page/portfolio-page.component';
+import { MainPageModule } from './main-page/main-page.module';
+import { UiModule } from './ui/ui.module';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, PortfolioPageComponent],
+  imports: [
+      RouterOutlet,
+      MainPageModule,
+      UiModule
+    ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

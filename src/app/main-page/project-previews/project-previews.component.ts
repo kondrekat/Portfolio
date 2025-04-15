@@ -3,7 +3,8 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-project-previews',
   templateUrl: './project-previews.component.html',
-  styleUrl: './project-previews.component.scss'
+  styleUrl: './project-previews.component.scss',
+  standalone: false
 })
 export class ProjectPreviewsComponent {
   projects = [

@@ -4,6 +4,7 @@ import { Component } from '@angular/core';
   selector: 'app-project-gallery',
   templateUrl: './project-gallery.component.html',
   styleUrls: ['./project-gallery.component.scss'],
+  standalone: false
 })
 export class ProjectGalleryComponent {
   projects = [
