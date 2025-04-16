@@ -26,4 +26,8 @@ export class ProjectGalleryComponent {
     console.log(`Переход на страницу: ${link}`);
     // В реальном приложении здесь будет использоваться Router для навигации
   }
+
+  openLink() {
+    window.open('https://github.com/kondrekat', '_blank');
+  }
 }

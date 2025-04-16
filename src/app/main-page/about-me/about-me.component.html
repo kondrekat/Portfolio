@@ -16,7 +16,7 @@
           <div class="line"></div>
           <p class="small">Years of Experience</p>
         </div>
-        <app-button [text]="buttonText"></app-button>
+        <app-button (buttonClick)="openLink()" [text]="buttonText"></app-button>
       </div>
     </div>
   </div>

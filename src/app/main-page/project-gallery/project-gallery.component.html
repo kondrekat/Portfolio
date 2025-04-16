@@ -92,7 +92,7 @@
       </div>
     </div>
     <div class="button-wrapper">
-      <app-button [text]="buttonText" class="center"></app-button>
+      <app-button [text]="buttonText" (buttonClick)="openLink()" class="center"></app-button>
     </div>
     <app-divider></app-divider>
   </section>

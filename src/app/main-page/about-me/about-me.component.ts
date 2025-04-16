@@ -1,6 +1,4 @@
 import { Component } from '@angular/core';
-import { DividerComponent } from "../../ui/divider/divider.component";
-import { ButtonComponent } from "../../ui/button/button.component";
 
 @Component({
   selector: 'app-about-me',
@@ -10,4 +8,9 @@ import { ButtonComponent } from "../../ui/button/button.component";
 })
 export class AboutMeComponent {
   public buttonText: string = 'More about me';
+
+  openLink() {
+    window.open('https://www.linkedin.com/in/kondrekat/', '_blank');
+  }
+  
 }
