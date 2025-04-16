@@ -9,5 +9,5 @@ import { Component } from '@angular/core';
 export class SummaryComponent {
   headingText = "HI, I'M KATE KONDRATENKO PROFESSIONAL FRONTEND DEVELOPER";
   leftText = "Based in Haifa, Israel and working Worldwide";
-  rightText = "Passionate Frontend Developer Crafting Visually Captivating Websites with Angular or anything you wish";
+  rightText = "Passionate Frontend Developer: Building Engaging Web Interfaces with Angular and More";
 }
