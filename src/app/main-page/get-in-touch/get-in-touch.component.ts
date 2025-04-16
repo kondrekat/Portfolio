@@ -1,0 +1,11 @@
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-get-in-touch',
+  templateUrl: './get-in-touch.component.html',
+  styleUrl: './get-in-touch.component.scss',
+  standalone: false
+})
+export class GetInTouchComponent {
+
+}

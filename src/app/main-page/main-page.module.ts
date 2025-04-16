@@ -8,6 +8,7 @@ import { ProjectGalleryComponent } from './project-gallery/project-gallery.compo
 import { ProjectPreviewsComponent } from './project-previews/project-previews.component';
 import { SummaryComponent } from './summary/summary.component';
 import { UiModule } from '../ui/ui.module';
+import { GetInTouchComponent } from './get-in-touch/get-in-touch.component';
 
 
 
@@ -19,7 +20,8 @@ import { UiModule } from '../ui/ui.module';
     ProjectDetailsComponent,
     ProjectGalleryComponent,
     ProjectPreviewsComponent,
-    SummaryComponent
+    SummaryComponent,
+    GetInTouchComponent
   ],
   imports: [
     CommonModule,

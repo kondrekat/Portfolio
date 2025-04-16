@@ -1,0 +1,9 @@
+@use '../../../variables' as *; // Или путь к вашим глобальным стилям
+
+.get-in-touch-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Центрируем контент по горизонтали */
+  padding: 40px;
+  text-align: center; /* Центрируем текст */
+}
