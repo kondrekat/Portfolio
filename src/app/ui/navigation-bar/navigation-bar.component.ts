@@ -8,11 +8,11 @@ import { Component } from '@angular/core';
 export class NavigationBarComponent {
   name = 'KATE KONDRATENKO';
   navigationLinksLeft = [
-    { label: 'HOME', link: '#home' },
-    { label: 'ABOUT', link: '#about' }
+    { label: 'HOME', link: '#' },
+    { label: 'ABOUT', link: '#about-me' }
   ];
   navigationLinksRight = [
-    { label: 'WORK', link: '#work' },
-    { label: 'CONTACT', link: '#contact' }
+    { label: 'WORK', link: '#projects' },
+    { label: 'CONTACT', link: '#get-in-touch' }
   ];
 }

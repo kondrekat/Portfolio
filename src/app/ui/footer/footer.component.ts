@@ -17,8 +17,8 @@ export class FooterComponent {
 
   navigationLinks = [
     { label: 'Home', url: '#' },
-    { label: 'About', url: '#' },
-    { label: 'Work', url: '#' },
-    { label: 'Contact', url: '#' },
+    { label: 'About', url: '#about-me' },
+    { label: 'Work', url: '#projects' },
+    { label: 'Contact', url: '#get-in-touch' },
   ];
 }
