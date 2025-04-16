@@ -1,0 +1,100 @@
+@use '../../../variables' as *; // Или путь к вашим глобальным стилям
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный фон */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Чтобы модалка была поверх всего */
+}
+
+.modal-content {
+  background-color: $primary-background-color;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  position: relative; /* Для позиционирования кнопки закрытия */
+  width: 90%;
+  max-width: 700px;
+  text-align: left;
+}
+
+.close-button {
+  position: absolute;
+  top: 0px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 4em;
+  cursor: pointer;
+  color: $primary-font-color;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+
+  div {
+    margin-bottom: 15px;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 5px;
+    color: $primary-font-color;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid $secondary-color;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 1em;
+    background-color: $secondary-color;
+    &::placeholder {
+        color: $secondary-font-color; /* Замените $secondary-font-color на желаемый цвет */
+        opacity: 1;
+      }
+  
+      &::-webkit-input-placeholder {
+        color: $secondary-font-color;
+      }
+  
+      &:-moz-placeholder {
+        color: $secondary-font-color;
+      }
+  
+      &::-moz-placeholder {
+        color: $secondary-font-color;
+      }
+  
+      &:-ms-input-placeholder {
+        color: $secondary-font-color;
+      }
+  }
+
+  textarea {
+    resize: vertical;
+  }
+
+  .contact-button {
+    margin-top: 20px;
+    background-color: $secondary-color;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 15px 30px;
+    cursor: pointer;
+    font-size: 1.125rem;
+    line-height: 1.5em;
+    font-weight: $font-weight-medium;
+  }
+}

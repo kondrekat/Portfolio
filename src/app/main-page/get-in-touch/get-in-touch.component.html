@@ -1,6 +1,12 @@
 <div class="get-in-touch-container">
     <p class="title">HAVE A PROJECT IN MIND?</p>
     <h2>LET'S WORK TOGETHER!</h2>
-    <app-button text="Get In Touch"></app-button>
+    <app-button (buttonClick)="openModal()" text="Get In Touch"></app-button>
+
+    <app-contact-form-modal
+        *ngIf="isModalOpen"
+        [formspreeEndpoint]="formspreeEndpoint"
+        (closeModalEvent)="closeModal()"
+    ></app-contact-form-modal>
 </div>
 <app-divider></app-divider>

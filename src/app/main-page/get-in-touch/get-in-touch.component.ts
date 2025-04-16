@@ -7,5 +7,14 @@ import { Component } from '@angular/core';
   standalone: false
 })
 export class GetInTouchComponent {
+  isModalOpen: boolean = false;
+  formspreeEndpoint = 'https://formspree.io/f/xblgegze'; // Замените на свой URL от Formspree
 
+  openModal() {
+    this.isModalOpen = true;
+  }
+
+  closeModal() {
+    this.isModalOpen = false;
+  }
 }

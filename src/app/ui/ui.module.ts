@@ -4,6 +4,7 @@ import { DividerComponent } from './divider/divider.component';
 import { ButtonComponent } from './button/button.component';
 import { NavigationBarComponent } from './navigation-bar/navigation-bar.component';
 import { FooterComponent } from './footer/footer.component';
+import { ContactFormModalComponent } from './contact-form-modal/contact-form-modal.component';
 
 
 
@@ -14,13 +15,15 @@ import { FooterComponent } from './footer/footer.component';
     DividerComponent,
     ButtonComponent,
     NavigationBarComponent,
-    FooterComponent
+    FooterComponent,
+    ContactFormModalComponent,
   ],
   exports: [
     DividerComponent,
     ButtonComponent,
     NavigationBarComponent,
-    FooterComponent
+    FooterComponent,
+    ContactFormModalComponent
   ]
 })
 export class UiModule { }
