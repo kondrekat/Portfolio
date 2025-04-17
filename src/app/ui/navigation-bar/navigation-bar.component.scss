@@ -1,27 +1,97 @@
 @use '../../../variables' as *;
-
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center; /* Вертикальное выравнивание по центру */
-  width: 100%;
-  padding: 1rem 2rem; /* Добавь отступы сверху и снизу, слева и справа по вкусу */
-  box-sizing: border-box; /* Чтобы padding не увеличивал общую ширину */
-  background-color: transparent; /* Или другой цвет, если нужен фон для навигации */
+ 
+.logo {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 16rem;
+  margin-top: 1rem;
 }
 
-ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-}
+.desktop-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    width: 100%;
+    padding: 1rem 2rem; 
+    box-sizing: border-box; 
+    background-color: transparent; 
 
-li {
-  margin: 0 1rem; /* Расстояние между ссылками */
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+    }
+
+    li {
+      margin: 0 1rem; 
+    }
 }
 
 a {
   text-decoration: none;
   font-weight: $font-weight-medium;
+}
+
+
+.hamburger-icon {
+  display: none; 
+  background: none;
+  border: none;
+  font-size: 2rem; 
+  cursor: pointer;
+  padding: 0;
+  color: $primary-font-color;
+}
+
+.mobile-menu {
+  display: none; 
+}
+
+@media (max-width: 768px) {
+  .logo {
+    margin-left: 1rem;
+  }
+
+  .desktop-menu  {
+    display: none;
+  }
+
+  .hamburger-icon {
+    display: block; 
+    position: absolute;
+    right: 0;
+    margin-right: 1rem;
+  }
+
+  .mobile-menu {
+    position: absolute; 
+    top: 4rem; 
+    left: 0;
+    right: 0;
+    z-index: 999; 
+    display: block; 
+    background-color: $primary-background-color;
+  }
+
+  .mobile-menu nav ul {
+    list-style: none;
+    padding: 10px 20px; 
+    margin: 0;
+  }
+
+  .mobile-menu li {
+    margin-bottom: 10px; 
+  }
+
+  .mobile-menu a {
+    text-decoration: none;
+    color: $primary-font-color;
+    font-weight: bold;
+    display: block; 
+    padding: 10px 0;
+  }
 }

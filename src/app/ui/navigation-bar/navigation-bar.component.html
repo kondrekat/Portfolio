@@ -1,13 +1,26 @@
-<nav>
+<span class="logo">{{ name }}</span>
+<nav class="desktop-menu">
     <ul class="link">
       @for (link of navigationLinksLeft; track $index) {
         <li><a [href]="link.link">{{ link.label }}</a></li>
       }
     </ul>
-    <span class="logo">{{ name }}</span>
     <ul class="link">
       @for (link of navigationLinksRight; track $index) {
         <li><a [href]="link.link">{{ link.label }}</a></li>
       }
     </ul>
 </nav>
+
+<button class="hamburger-icon" (click)="toggleMobileMenu()">
+  ☰ </button>
+
+<div class="mobile-menu" *ngIf="isMobileMenuOpen">
+  <nav>
+    <ul>
+      @for (link of combinedNavigationLinks; track $index) {
+        <li><a [href]="link.link" (click)="closeMobileMenu()">{{ link.label }}</a></li>
+      }
+      </ul>
+  </nav>
+</div>

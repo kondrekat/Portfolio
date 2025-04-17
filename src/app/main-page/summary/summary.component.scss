@@ -1,6 +1,6 @@
 @use '../../../variables' as *;
 
-.about-me-container {
+.summary-container {
   width: 100%;
   padding-top: 2rem; /* Оставь верхний отступ, если нужен */
   padding-bottom: 2rem; /* Оставь нижний отступ, если нужен */
@@ -39,3 +39,8 @@ h1 {
     @extend .text-block-base;
     text-align: right;
   }
+@media (max-width: 768px) {
+  .summary-container {
+    padding-top: 4rem;
+  }
+}
