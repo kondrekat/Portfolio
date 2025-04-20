@@ -4,26 +4,16 @@
     <br>
     <h2>WHAT I DO</h2>
     <hr class="divider">
-  </div>
-<div class="services-container">
-    <div *ngFor="let block of servicesBlocks; let last = last" class="service-row">
+</div>
+  <div class="services-container">
+    <div *ngFor="let block of servicesBlocks; let last = last" class="service-block"> 
       <div class="block-title">
         <h4>{{ block.title }}</h4>
       </div>
-      <div class="services-list">
-        <div class="services-column">
-          <div *ngFor="let service of block.services | slice: 0:block.services.length / 2">
-            <p class="small">{{ service }}</p>
-          </div>
-        </div>
-        <div class="services-column">
-          <div *ngFor="let service of block.services | slice: block.services.length / 2">
-            <p class="small">{{ service }}</p>
-          </div>
-        </div>
+      <div class="services-list"> 
+        <p *ngFor="let service of block.services" class="small">{{ service }}</p>
       </div>
       <hr *ngIf="!last" class="services-divider">
-      <div *ngIf="last" class="last-row-margin"></div>
     </div>
   </div>
   

@@ -20,30 +20,10 @@
     }
   }
 
-.services-container {
-  display: flex;
-  flex-direction: column;
-  padding: 0 2rem;
-}
-
-.service-row {
-  display: grid;
-  grid-template-columns: 1fr 1fr; 
-  padding: 15px 0;
-}
-
 .block-title {
   text-transform: uppercase;
   color: $primary-font-color;
   padding-right: 20px;
-}
-
-.services-list {
-  display: grid;
-  grid-template-columns: 1fr 1fr; /* Разделение на две подколонки */
-  gap: 10px;
-  color: $primary-font-color;
-  align-items: center;
 }
 
 .services-divider {
@@ -53,6 +33,62 @@
   grid-column: 1 / -1;
 }
 
-.last-row-margin {
-  margin-bottom: 30px; /* Задайте желаемый отступ после последнего блока */
+.services-container {
+  display: flex; 
+  flex-direction: column;
+  gap: 3rem; 
+  padding: 2rem; 
+  box-sizing: border-box;
+}
+
+.service-block { 
+  display: grid; 
+  grid-template-columns: 1fr 2fr; 
+  gap: 2rem; 
+  align-items: start; 
+}
+
+.services-list { 
+  display: grid; 
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 1rem 2rem; 
+  p {
+    margin: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .services-container {
+    gap: 2rem; 
+    padding: 1rem; 
+  }
+
+  .service-block {
+    display: flex; 
+    flex-direction: column; 
+    gap: 1rem; 
+  }
+
+  .block-title {
+    width: 100%;
+    margin-bottom: 0.5rem; 
+  }
+
+  .services-list {
+    display: block; 
+    gap: 0.5rem; 
+    grid-template-columns: none;
+    gap: 0.5rem; 
+
+    p {
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  .services-divider {
+    grid-column: span 1; 
+    margin-top: 1rem; 
+    margin-bottom: 1rem; 
+    width: 100%;
+  }
 }
