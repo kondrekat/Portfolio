@@ -1,6 +1,6 @@
 @use '../../../variables' as *; // Или путь к вашим глобальным стилям
 
-.app-footer {
+.footer {
   display: flex;
   justify-content: space-between; /* Распределяем пространство между секциями */
   align-items: center; /* Выравниваем элементы по вертикали по центру */
@@ -45,4 +45,17 @@
         text-decoration: none;
         font-weight: $font-weight-medium;
       }
+}
+
+
+@media (max-width: 768px) {
+  .footer  {
+    display: block;
+    text-align: center;
+  }
+
+  .right-section, .center-section ul {
+    justify-content: center;
+    margin-top: 1rem;
+  }
 }
