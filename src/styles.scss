@@ -130,12 +130,24 @@ p.small {
   }
 }
 
-@media (max-width: 478px) {
+@media (max-width: 570px) {
   h1 {
     font-size: 3rem;
   }
   p.extra-large {
     font-size: 1.5rem;
     line-height: 1.1em;
+  }
+}
+
+@media (max-width: 420px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 350px) {
+  h1 {
+    font-size: 2rem;
   }
 }
