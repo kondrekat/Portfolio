@@ -55,7 +55,6 @@
 
 
 
-/* Адаптивность (пример для небольших экранов) */
 @media (max-width: 768px) {
   .about-me-container {
     grid-template-columns: 1fr; /* На маленьких экранах делаем одну колонку */
@@ -67,5 +66,12 @@
 
   .line {
     width: 12rem;
+  }
+}
+
+
+@media (max-width: 478px) {
+  .stats-container {
+    grid-template-columns: 1fr; /* На маленьких экранах делаем одну колонку */
   }
 }

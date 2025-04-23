@@ -100,8 +100,6 @@ p.small {
     margin-right: 1rem;
 }
 
-
-// Медиазапрос для экранов с максимальной шириной 1200px (ноутбуки и планшеты)
 @media (max-width: 1200px) {
   h1 {
     font-size: 4rem; 
@@ -120,7 +118,6 @@ p.small {
   }
 }
 
-// Медиазапрос для экранов с максимальной шириной 768px (мобильные устройства)
 @media (max-width: 768px) {
   h2 {
     font-size: 2.5rem;
@@ -130,5 +127,15 @@ p.small {
   }
   p.stat-number {
     font-size: 3.25rem;
+  }
+}
+
+@media (max-width: 478px) {
+  h1 {
+    font-size: 3rem;
+  }
+  p.extra-large {
+    font-size: 1.5rem;
+    line-height: 1.1em;
   }
 }
